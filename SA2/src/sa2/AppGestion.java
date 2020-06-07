@@ -63,7 +63,7 @@ public class AppGestion extends JFrame {
 		contentPane.add(lblHotel);
 //////////////////Deconnexion //////////
 		JButton btnDeconnexion = new JButton("Deconnexion");
-		btnDeconnexion.setIcon(new ImageIcon("C:\\Users\\CHRISTOBAL\\eclipse-workspace\\SA2\\image\\logout1.png"));
+		btnDeconnexion.setIcon(new ImageIcon("C:\\Users\\CHRISTOBAL\\git\\\\repository\\SA2\\image\\logout1.png"));
 		btnDeconnexion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				dispose();

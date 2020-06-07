@@ -218,7 +218,7 @@ public class FormReservation extends JFrame {
 						
 						Connection con;
 						con = (Connection) data.db_connect();
-						java.sql.PreparedStatement stmt = con.prepareStatement("INSERT INTO client (prenom,nom,age,sexe,phone,pays_origine) VALUES (?,?,?,?,?,?),Statement.RETURN_GENERATED_KEYS");
+						java.sql.PreparedStatement stmt = con.prepareStatement("INSERT INTO client (prenom,nom,age,sexe,phone,pays) VALUES (?,?,?,?,?,?),Statement.RETURN_GENERATED_KEYS");
 						
 						stmt.setString(1, prenom);
 						stmt.setString(2, nom);

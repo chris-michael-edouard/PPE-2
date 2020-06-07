@@ -184,7 +184,7 @@ public class InterClient extends JFrame {
 				try {
 					Connection con;
 					con = (Connection) data.db_connect();
-					java.sql.PreparedStatement stmt1 = con.prepareStatement("INSERT INTO client (prenom,nom,age,sexe,email,phone,pays_origine) VALUES (?,?,?,?,?,?,?)");
+					java.sql.PreparedStatement stmt1 = con.prepareStatement("INSERT INTO client (prenom,nom,age,sexe,email,phone,pays) VALUES (?,?,?,?,?,?,?)");
 					
 					stmt1.setString(1, prenom);
 					stmt1.setString(2, nom);
@@ -254,7 +254,7 @@ public class InterClient extends JFrame {
 				try {
 					Connection con;
 					con = (Connection) data.db_connect();
-					java.sql.PreparedStatement stmt1 = con.prepareStatement("UPDATE client  SET prenom=?,nom=?,age=?,sexe=?,email=?,phone=?,pays_origine=? WHERE id_client=?");
+					java.sql.PreparedStatement stmt1 = con.prepareStatement("UPDATE client  SET prenom=?,nom=?,age=?,sexe=?,email=?,phone=?,pays=? WHERE id_client=?");
 					
 					stmt1.setString(1, prenom);
 					stmt1.setString(2, nom);

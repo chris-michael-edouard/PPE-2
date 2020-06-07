@@ -203,7 +203,7 @@ public class Testlogin extends JFrame {
 		contentPane.add(lblLogin);
 		
 		JLabel lblbackground = new JLabel("");
-		lblbackground.setIcon(new ImageIcon("C:\\Users\\CHRISTOBAL\\eclipse-workspace\\SA2\\image\\back.jpeg"));
+		lblbackground.setIcon(new ImageIcon("C:\\Users\\CHRISTOBAL\\git\\repository\\SA2\\image\\back.jpeg"));
 		lblbackground.setBounds(0, 0, 767, 470);
 		contentPane.add(lblbackground);
 	

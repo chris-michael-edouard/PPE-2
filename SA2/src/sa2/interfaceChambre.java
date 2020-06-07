@@ -277,7 +277,7 @@ public class interfaceChambre extends JFrame {
 			    String searchObject = txtsearch.getText();
 				java.sql.Connection con;
 				con=data.db_connect();
-				PreparedStatement stmt =(PreparedStatement) con.prepareStatement("SELECT id_chambre as '#',nom as 'Nom',type as 'Type', tarif as 'Tarif', superficie as 'Capacite', statue as 'Statue'  from chambre inner join categorie on chambre.id_categorie = categorie.id_categorie WHERE "+filterCriteria+" LIKE?");
+				PreparedStatement stmt =(PreparedStatement) con.prepareStatement("SELECT id_chambre as '#',nom as 'Nom',type as 'Type', tarif as 'Tarif', superficie as 'Capacite', status as 'Statue'  from chambre inner join categorie on chambre.id_categorie = categorie.id_categorie WHERE "+filterCriteria+" LIKE?");
 				stmt.setString(1,  "%" + searchObject + "%");
 				
 				ResultSet rs = stmt.executeQuery();
